@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0"
+	prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="31.0" fitWidth="38.0" layoutX="38.0"
+					layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../Image/warning_icon.png" />
+					</image>
+				</ImageView>
+				<Text layoutX="86.0" layoutY="40.0" strokeType="OUTSIDE"
+					strokeWidth="0.0"
+					text="Sorry! This course has no attendance for you at this moment."
+					wrappingWidth="287.18994140625">
+					<font>
+						<Font size="12.0" />
+					</font>
+				</Text>
+				<Button fx:id="ok" layoutX="339.0" layoutY="59.0"
+					mnemonicParsing="false" onAction="#warningClose" prefHeight="27.0"
+					prefWidth="47.0" text="OK" />
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

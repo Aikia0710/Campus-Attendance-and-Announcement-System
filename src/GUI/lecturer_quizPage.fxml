@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="57.0" fitWidth="69.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../logo_icon.png" />
+					</image>
+				</ImageView>
+				<Line endX="257.0" endY="-1.52587890625E-5" layoutX="121.0" layoutY="78.0" startX="-100.0" />
+				<Text layoutX="75.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quizzes" wrappingWidth="106.2060546875">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Text>
+				<Button defaultButton="true" layoutX="12.0" layoutY="659.0" mnemonicParsing="false" text="&lt; Back" />
+				<AnchorPane layoutX="20.0" layoutY="113.0" prefHeight="430.0" prefWidth="360.0">
+					<children>
+						<ListView fx:id="availableQuizList" layoutX="2.0" prefHeight="195.0" prefWidth="357.0" />
+						<Text fill="#1598da" layoutX="2.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
+							<font>
+								<Font size="14.0" />
+							</font>
+						</Text>
+						<Button fx:id="releaseQuizButton" layoutX="32.0" layoutY="205.0" mnemonicParsing="false" onAction="#releaseQuiz" prefHeight="27.0" prefWidth="100.0" text="Release" />
+						<ListView fx:id="releasedQuizList" layoutX="2.0" layoutY="293.0" prefHeight="195.0" prefWidth="357.0" />
+						<Button fx:id="editQuizButton" layoutX="231.0" layoutY="205.0" mnemonicParsing="false" onAction="#editQuiz" prefHeight="27.0" prefWidth="100.0" text="Edit" />
+						<Button fx:id="deleteQuizButton" layoutX="32.0" layoutY="245.0" mnemonicParsing="false" onAction="#deleteQuiz" prefHeight="27.0" prefWidth="100.0" text="Delete" />
+						<Button fx:id="addNewQuizButton" layoutX="231.0" layoutY="245.0" mnemonicParsing="false" onAction="#addNewQuiz" prefHeight="27.0" prefWidth="100.0" text="Add" />
+					</children>
+				</AnchorPane>
+				<Text fill="#1598da" layoutX="20.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Text>
+				<Button fx:id="reviewQuizButton" layoutX="200.0" layoutY="615.0" mnemonicParsing="false" onAction="#reviewQuiz" prefHeight="30.0" prefWidth="173.0" text="Review the quiz" />
+				<Text fx:id="courseNameCid" layoutX="257.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="coursename:cid" />
+            <Button fx:id="backToUserProfileButton" layoutX="16.0" layoutY="630.0" mnemonicParsing="false" onAction="#backToUserProfile" text="Back" />
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>
